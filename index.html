@@ -16,5 +16,38 @@
     <!-- Script -->
     <script defer src="js/script.js"></script>
   </head>
-  <body></body>
+  <body>
+    <main class="hero-section">
+      <img class="logo" src="assets/logo.svg" alt="base apparel logo" />
+      <picture>
+        <source srcset="/assets/hero-desktop.jpg" media="(min-width: 62rem)" />
+        <img
+          class="hero-img"
+          src="/assets/hero-mobile.jpg"
+          alt="woman in orange shirt"
+        />
+      </picture>
+      <span class="sup-heading">WE'RE</span>
+      <h1 class="hero-heading">COMING SOON</h1>
+      <p class="hero-text">
+        Hello fellow shoppers! We're currently building our new fashion store.
+        Add your email below to stay up-to-date with announcements and our
+        launch deals.
+      </p>
+      <form action="">
+        <input
+          type="email"
+          for="email"
+          id="email-validation"
+          placeholder="Email Address"
+        />
+        <button type="submit">
+          <img
+            src="assets/icon-arrow.svg"
+            alt="an arrow that points to the right"
+          />
+        </button>
+      </form>
+    </main>
+  </body>
 </html>
