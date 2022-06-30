@@ -36,17 +36,25 @@
       </p>
       <form action="">
         <input
+          class="email-validation"
           type="email"
           for="email"
           id="email-validation"
           placeholder="Email Address"
         />
-        <button type="submit">
+        <img
+          class="error-icon"
+          src="assets/icon-error.svg"
+          alt="exclamation mark"
+        />
+        <button class="submit-btn" type="submit">
           <img
+            class="submit-icon"
             src="assets/icon-arrow.svg"
             alt="an arrow that points to the right"
           />
         </button>
+        <span class="error-message">Please provide a valid email</span>
       </form>
     </main>
   </body>
