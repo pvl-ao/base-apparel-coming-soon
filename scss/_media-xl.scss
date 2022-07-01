@@ -1,0 +1,20 @@
+// 1200px
+@media (min-width: 75rem) {
+  :root {
+    --logo-width: auto;
+    --logo-margin: 5rem 3.1rem 3.1rem 20%;
+    --hero-content-margin: 4.6rem 16% 7.2rem 20%;
+    /* ----- Email Form ----- */
+    --email-validation-width: 44.5rem;
+    --email-validaton-height: 5.6rem;
+    --email-validation-margin: 0 0;
+    --email-input-width: 44.5rem;
+    --email-input-height: 5.6rem;
+    --submit-btn-width: 9rem;
+    --submit-btn-height: 5.4rem;
+    --error-icon-right: 10.7rem;
+    --error-icon-top: 1.6rem;
+    --error-message-margin: 1rem 0 0 3.1rem;
+    --email-input-padding: 0 0 0 3.1rem;
+  }
+}
