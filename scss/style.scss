@@ -154,3 +154,11 @@ body {
   text-align: start;
   display: none;
 }
+
+/* ----- Media Queries ----- */
+@import 'media-es';
+@import 'media-sm';
+@import 'media-md';
+@import 'media-lg';
+@import 'media-xl';
+@import 'media-xxl';
