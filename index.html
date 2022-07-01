@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Base Apparel coming soon page</title>
-    <!-- Favicon icon -->
+    <!-- Favicon Icon -->
     <link
       rel="icon"
       type="image/png"
@@ -16,46 +16,54 @@
     <!-- Script -->
     <script defer src="js/script.js"></script>
   </head>
+
   <body>
+    <!-- Hero Section -->
     <main class="hero-section">
-      <img class="logo" src="assets/logo.svg" alt="base apparel logo" />
-      <picture>
-        <source srcset="/assets/hero-desktop.jpg" media="(min-width: 62rem)" />
-        <img
-          class="hero-img"
-          src="/assets/hero-mobile.jpg"
-          alt="woman in orange shirt"
-        />
-      </picture>
-      <span class="sup-heading">WE'RE</span>
-      <h1 class="hero-heading">COMING SOON</h1>
-      <p class="hero-text">
-        Hello fellow shoppers! We're currently building our new fashion store.
-        Add your email below to stay up-to-date with announcements and our
-        launch deals.
-      </p>
-      <form action="">
-        <input
-          class="email-validation"
-          type="email"
-          for="email"
-          id="email-validation"
-          placeholder="Email Address"
-        />
-        <img
-          class="error-icon"
-          src="assets/icon-error.svg"
-          alt="exclamation mark"
-        />
-        <button class="submit-btn" type="submit">
-          <img
-            class="submit-icon"
-            src="assets/icon-arrow.svg"
-            alt="an arrow that points to the right"
+      <!-- Logo -->
+      <div id="logo">
+        <img src="./assets/logo.svg" alt="logo" />
+      </div>
+      <!-- Hero Image -->
+      <div id="hero-img"></div>
+      <!-- Hero Content -->
+      <div id="hero-content">
+        <span class="sup-heading">WE'RE</span>
+        <h1 class="hero-heading">COOMING<br />SOON</h1>
+
+        <p class="content hero-text">
+          Hello fellow shoppers! We're currently building our new fashion store.
+          Add your email below to stay up-to-date with announcements and our
+          launch deals.
+        </p>
+        <!-- Email Form -->
+        <form class="email-validation" id="email-form">
+          <input
+            class="email-input"
+            type="email"
+            for="email"
+            placeholder="Email Address"
           />
-        </button>
-        <span class="error-message">Please provide a valid email</span>
-      </form>
+          <img
+            class="error-icon"
+            src="assets/icon-error.svg"
+            alt="exclamation mark"
+          />
+          <button
+            class="submit-btn"
+            type="submit"
+            form="email-form"
+            value="Submit"
+          >
+            <img
+              class="submit-icon"
+              src="assets/icon-arrow.svg"
+              alt="an arrow that points to the right"
+            />
+          </button>
+          <span class="error-message">Please provide a valid email</span>
+        </form>
+      </div>
     </main>
   </body>
 </html>
