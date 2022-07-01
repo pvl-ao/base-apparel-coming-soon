@@ -1,0 +1,51 @@
+// 900px
+@media (min-width: 56.25rem) {
+  :root {
+    --logo-width: 13.5rem;
+    --logo-margin: 4rem 3.1rem 3.1rem 18%;
+    --hero-section-grid-template-columns: 57.5% 42.5%;
+    --hero-section-grid-template-rows: 9.8rem auto;
+    --hero-img-height: auto;
+    --hero-content-margin: 4.6rem 15% 7.2rem 18%;
+    --hero-content-text-align: start;
+    --sup-heading-font-size: 4.8rem;
+    --sup-heading-letter-spacing: 0.25em;
+    --hero-heading-font-size: 4.8rem;
+    --hero-heading-letter-spacing: 0.25em;
+    /* ----- Email Form ----- */
+    --email-validation-width: 34.6rem;
+    --email-validaton-height: 5rem;
+    --email-input-width: 34.6rem;
+    --email-input-height: 5rem;
+    --submit-btn-width: 7rem;
+    --submit-btn-height: 4.8rem;
+    --error-icon-right: 9rem;
+    --error-icon-top: 1.2rem;
+    --error-message-margin: 1rem 0 0 2.6rem;
+    --email-input-padding: 0 0 0 2.6rem;
+  }
+  .hero-section {
+    background-image: url('../assets/bg-pattern-desktop.svg'),
+      var(--body-background-image);
+    background-repeat: no-repeat;
+    display: grid;
+    background-size: 57.5% 100%;
+    grid-template-columns: var(--hero-section-grid-template-columns);
+    grid-template-rows: var(--hero-section-grid-template-rows);
+    grid-template-areas:
+      'logo hero-img'
+      'hero-content hero-img';
+    min-height: 100vh;
+  }
+
+  #hero-img {
+    background-image: url('../assets/hero-desktop.jpg');
+    background-size: cover;
+    background-position: top center;
+  }
+
+  #hero-content {
+    align-items: flex-start;
+    justify-content: center;
+  }
+}
